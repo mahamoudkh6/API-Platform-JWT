@@ -21,3 +21,14 @@ controllers:
         _locale: '%app_locales%'
     defaults:
         _locale: '%locale%'
+
+myapi:
+    resource:
+        path: '../src/Controller/Myapi'
+        namespace: App\Controller\Myapi
+    type: attribute
+    prefix: /
+
+auth:
+    path: /auth
+    methods: ['POST']
